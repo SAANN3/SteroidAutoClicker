@@ -12,10 +12,10 @@ Also it support export and import so your scripts can be easily recovered
 On windows simply start a program.
 
 On linux you need root priveleges (sudo) to run this command, because writing into /dev/uinput . So i separated a program into two : An actual gui and cli which recieves events from gui.
-To run this, go to directory and open two programs 
+To run this, go to directory and run AutoClicker.sh or  open two programs 
 ```bash
-sudo ./deviceProgram &
-./AutoClicker
+sudo './deviceProgram &'
+./appAutoClicker
 ```
 
 ### Or if you prefer to compile from source :)
@@ -27,6 +27,9 @@ sudo ./deviceProgram &
   mkdir build
   cd build && cmake .. && cd ..
   cmake --build build/
+  cd build
+  chmod +x deviceProgram
+  chmod +x appAutoclicker
   
 ```
 
