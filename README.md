@@ -14,8 +14,8 @@ On windows simply start a program.
 On linux you need root priveleges (sudo) to run this command, because writing into /dev/uinput . So i separated a program into two : An actual gui and cli which recieves events from gui.
 To run this, go to directory and run AutoClicker.sh or  open two programs 
 ```bash
-sudo './deviceProgram &'
-./appAutoClicker
+sudo bash -c './deviceProgram &'
+./appAutoclicker
 ```
 
 ### Or if you prefer to compile from source :)
