@@ -106,6 +106,10 @@ void InputEvent::event(int type, int code, int val)
 
 void InputEvent::moveMouse(int x, int y,int type)
 {
+    /// reset mouse pos
+    event(EV_ABS, ABS_X,-1);
+    event(EV_ABS, ABS_Y,-1);
+    ///
     event(EV_ABS, ABS_X,x);
     event(EV_ABS, ABS_Y,y);
     event(EV_SYN, SYN_REPORT, 0);
